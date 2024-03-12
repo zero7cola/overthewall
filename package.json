@@ -1,0 +1,18 @@
+{
+  "name": "gooverwall",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.67",
+    "@vuepress/plugin-theme-data": "2.0.0-beta.67",
+    "vuepress": "^2.0.0-beta.67"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress-vite": "^2.0.0-beta.67"
+  }
+}
