@@ -18,7 +18,7 @@ else
   msg='来自github actions的自动部署'
   githubUrl=https://zero7cola:${GITHUB_TOKEN}@github.com/zero7cola/overthewall.git
   git config --global user.name "overthewall"
-  git config --global user.email "88651795@qq.com"
+  git config --global user.email "anybenull@gmail.com"
 fi
 git init
 git add -A
