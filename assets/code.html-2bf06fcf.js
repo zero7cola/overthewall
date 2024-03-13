@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5efb541e","path":"/go/code.html","title":"go代码片段","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"发送post请求","slug":"发送post请求","link":"#发送post请求","children":[]}],"git":{"updatedTime":1710209336000,"contributors":[{"name":"zero","email":"zhangzhuang@dongyou.com","commits":1}]},"filePathRelative":"go/code.md"}');export{e as data};

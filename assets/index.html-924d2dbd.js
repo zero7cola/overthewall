@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d0a8eae","path":"/go/","title":"go注意事项","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"打包","slug":"打包","link":"#打包","children":[]}],"git":{"updatedTime":1710209336000,"contributors":[{"name":"zero","email":"zhangzhuang@dongyou.com","commits":1}]},"filePathRelative":"go/README.md"}');export{e as data};
