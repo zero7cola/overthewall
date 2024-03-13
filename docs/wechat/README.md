@@ -11,7 +11,7 @@
 
 TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>
 QQ：88651795​<br>
-Email:zerodegreecola@gmail.com
+Email:anybenull@gmail.com
 :::
 
 ## 微信预加保号

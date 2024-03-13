@@ -9,7 +9,7 @@
 <br>
 TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>
 QQ：88651795<br>
-Email:zerodegreecola@gmail.com
+Email:anybenull@gmail.com
 :::
 
 <b><font color=#FF0033>注意：用境外手机卡切记要在手机设置里要开启漫游，有境外打电话给你，不认识的号码一律挂断！！！不然8块钱一分钟（属于国际漫游，挂断不会扣费）</font></b>
@@ -47,7 +47,7 @@ Email:zerodegreecola@gmail.com
 
 其他联系方式：​
 
-TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>QQ:88651795<br>Email:zerodegreecola@gmail.com
+TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>QQ:88651795<br>Email:anybenull@gmail.com
 
 ### 2、到手怎么玩？
 <b><font color=#00CC00>注意点一</font></b>：如果您是小米手机，插卡是会默认发送激活短信的，这样会扣除3.5 HKD的短信漫游费用，下面是解决方法：（注意：未发现其他品牌手机有此奇葩机制）
