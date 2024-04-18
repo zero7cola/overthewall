@@ -59,7 +59,7 @@ export default {
               },
               {
                 text: '前台h5演示',
-                link: 'http://fastapp.gooverwall.com/',
+                link: 'http://fastshop.top/',
                 // 该元素将一直处于激活状态
                // activeMatch: '/',
               },
