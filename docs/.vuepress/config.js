@@ -58,8 +58,8 @@ export default {
                // activeMatch: '/',
               },
               {
-                text: '前台h5演示(马上开放)',
-                link: '',
+                text: '前台h5演示',
+                link: 'http://fastapp.gooverwall.com/',
                 // 该元素将一直处于激活状态
                // activeMatch: '/',
               },
