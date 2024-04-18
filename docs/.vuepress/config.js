@@ -48,17 +48,29 @@ export default {
           { text: '微信解封', link: '/wechat/' },
           // // {  text: '文档', link: '/api/FIRSTOFALL.md' },
           // //{ text: 'External', link: 'https://www.baidu.com' },
-          // {
-          //   text: '文档设置',
-          //   children: [
-          //     {
-          //       text: '侧边栏',
-          //       link: 'https://v2.vuepress.vuejs.org/zh/reference/default-theme/config.html#sidebar',
-          //       // 该元素将一直处于激活状态
-          //      // activeMatch: '/',
-          //     },
-          //   ],
-          // },
+          {
+            text: '快速搭建商城',
+            children: [
+              {
+                text: '首页(马上开放)',
+                link: '',
+                // 该元素将一直处于激活状态
+               // activeMatch: '/',
+              },
+              {
+                text: '前台h5演示(马上开放)',
+                link: '',
+                // 该元素将一直处于激活状态
+               // activeMatch: '/',
+              },
+              {
+                text: '商户后台演示(马上开放)',
+                link: '',
+                // 该元素将一直处于激活状态
+               // activeMatch: '/',
+              },
+            ],
+          },
           //{ text: 'demo', link: 'https://v2.vuepress.vuejs.org/zh/' },
         ],
         sidebarDepth: 2, // 设置一级时，可以看到 一级、二级目录；设置为2时可以看到 三级目录

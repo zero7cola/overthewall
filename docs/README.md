@@ -20,7 +20,7 @@ features:
   details: 手把手教你购买、使用hahasim卡，可注册微信，无需实名
 - title: VX解封、辅助注册
   details: 解决各种微信账号问题、为你的微信保驾护航
-- title: 外网注册
-  details: 各种需要外网注册的手机号、秒注册。
-footer: MIT Licensed | Copyright © 2017-2023 zerodegree
+- title: 商城快速搭建
+  details: 一套程序可以多开商城，可自建可租用
+footer: MIT Licensed | Copyright © 2017-2024 anybenull
 ---
