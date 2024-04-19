@@ -1,50 +1,27 @@
-//import { defineClientConfig } from '@vuepress/client'
-import { viteBundler } from 'vuepress'
-import { defaultTheme } from 'vuepress'
+import { blogPlugin } from '@vuepress/plugin-blog'
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { searchPlugin } from '@vuepress/plugin-search'
 
-// export default defineClientConfig({
-//   enhance({ app, router, siteData }) {},
-//   setup() {},
-//   rootComponents: [],
-// })
+export default defineUserConfig({
+  lang: 'zh-CN',
 
-export default {
-    plugins: [
-      searchPlugin({
-        locales: {
-          '/': {
-            placeholder: '搜索文档',
-          },
-          '/zh/': {
-            placeholder: '搜索文档',
-          },
-        },
-      }),
-    ],
-    head:[
-      [
-        'link', {rel:'icon', href : '/logo-title.jpg'}
-      ]
-    ],
-    bundler: viteBundler({
-      vuePluginOptions: {
-        template: {
-          compilerOptions: {
-            isCustomElement: (tag) => tag === 'center',
-          },
-        },
-      },
-    }),
-    theme: defaultTheme({
-        logo: '/logo-title.jpg',
-        title: 'hahah',
-        // locales: {
-        //   title :'sssss',
-        //   description:"2222"
-        // },
-        navbar: [
-          { text: '香港卡', link: '/card/' },
+  title: '',
+  description: 'My first VuePress Site',
+  head:[
+    [
+      'link', {rel:'icon', href : '/logo-title.jpg'}
+    ]
+  ],
+
+  theme: defaultTheme({
+    logo: '/logo-title.jpg',
+
+    navbar: [
+      //'/',
+      { text: '香港卡', link: '/card/' },
           { text: '微信解封', link: '/wechat/' },
           // // {  text: '文档', link: '/api/FIRSTOFALL.md' },
           // //{ text: 'External', link: 'https://www.baidu.com' },
@@ -71,74 +48,141 @@ export default {
               },
             ],
           },
-          //{ text: 'demo', link: 'https://v2.vuepress.vuejs.org/zh/' },
-        ],
-        sidebarDepth: 2, // 设置一级时，可以看到 一级、二级目录；设置为2时可以看到 三级目录
-    
-        // sidebar: [
-        //    // SidebarItem
-        //    {
-        //     text: '首页',
-        //     link: '/',
-        //     children: [
-        //     // SidebarItem
-        //     {
-        //         text: 'github',
-        //         link: 'https://github.com',
-        //         children: [],
-        //         collapsible: false,
-        //     },
-        //     // 字符串 - 页面文件路径
-        //     //'/foo/bar.md',
-        //     ],
-        //     },
-        //     {
-        //         text: 'GO文档',
-        //         link: '/go/',
-        //         children: [
-        //         // SidebarItem
-        //         // {
-        //         //     text: 'github',
-        //         //     link: 'https://github.com',
-        //         //     children: [],
-        //         // },
-        //         // 字符串 - 页面文件路径
-        //         //'/foo/bar.md',
-        //         ],
-        //     }      
-        // ]
-         // 可折叠的侧边栏
-       sidebar:'auto',
-       //sidebar: {
-            // '/': [
-            //     {
-            //         text: '',
-            //         collapsible: false,
-            //         children: ['/'],
-            //     },
-            //     // {
-            //     //     text: 'GO文档',
-            //     //     collapsible: true,
-            //     //     children: ['/go/README.md', '/go/code.md'],
-            //     // },
-            //     // {
-            //     //     text: '支付',
-            //     //     collapsible: true,
-            //     //     children: ['/note/alipay.md','/note/wechatpay.md','/note/applepay.md'],
-            //     // },
-            //     // {
-            //     //     text: '杂',
-            //     //     collapsible: true,
-            //     //     children: ['/note/es.md','/note/docker.md','/note/js.md','/note/laravel.md','/note/lnmp.md','/note/redis.md','/note/queue.md','/note/other.md'],
-            //     // },
-            // ],
-            // '/go/': [
-            // {
-            //     text: 'GO文档',
-            //     collapsible: true,
-            //     children: ['/go/README.md'],
-            // },
-            // ],
-      //},
+      {
+        text: '文章',
+        link: '/article/',
+      },
+      {
+        text: '分类',
+        link: '/category/',
+      },
+      {
+        text: '标签',
+        link: '/tag/',
+      },
+      {
+        text: '时间线',
+        link: '/timeline/',
+      },
+    ],
+  }),
+
+  plugins: [
+    blogPlugin({
+      // Only files under posts are articles
+      filter: ({ filePathRelative }) =>
+        filePathRelative ? filePathRelative.startsWith('posts/') : false,
+
+      // Getting article info
+      getInfo: ({ frontmatter, title, data }) => ({
+        title,
+        author: frontmatter.author || '',
+        date: frontmatter.date || null,
+        category: frontmatter.category || [],
+        tag: frontmatter.tag || [],
+        excerpt:
+          // Support manually set excerpt through frontmatter
+          typeof frontmatter.excerpt === 'string'
+            ? frontmatter.excerpt
+            : data?.excerpt || '',
       }),
-  }
+
+      // Generate excerpt for all pages excerpt those users choose to disable
+      excerptFilter: ({ frontmatter }) =>
+        !frontmatter.home &&
+        frontmatter.excerpt !== false &&
+        typeof frontmatter.excerpt !== 'string',
+
+      category: [
+        {
+          key: 'category',
+          getter: (page) => page.frontmatter.category || [],
+          layout: 'Category',
+          itemLayout: 'Category',
+          frontmatter: () => ({
+            title: 'Categories',
+            sidebar: false,
+          }),
+          itemFrontmatter: (name) => ({
+            title: `Category ${name}`,
+            sidebar: false,
+          }),
+        },
+        {
+          key: 'tag',
+          getter: (page) => page.frontmatter.tag || [],
+          layout: 'Tag',
+          itemLayout: 'Tag',
+          frontmatter: () => ({
+            title: 'Tags',
+            sidebar: false,
+          }),
+          itemFrontmatter: (name) => ({
+            title: `Tag ${name}`,
+            sidebar: false,
+          }),
+        },
+      ],
+
+      type: [
+        {
+          key: 'article',
+          // Remove archive articles
+          filter: (page) => !page.frontmatter.archive,
+          layout: 'Article',
+          frontmatter: () => ({
+            title: 'Articles',
+            sidebar: false,
+          }),
+          // Sort pages with time and sticky
+          sorter: (pageA, pageB) => {
+            if (pageA.frontmatter.sticky && pageB.frontmatter.sticky)
+              return pageB.frontmatter.sticky - pageA.frontmatter.sticky
+
+            if (pageA.frontmatter.sticky && !pageB.frontmatter.sticky) return -1
+
+            if (!pageA.frontmatter.sticky && pageB.frontmatter.sticky) return 1
+
+            if (!pageB.frontmatter.date) return 1
+            if (!pageA.frontmatter.date) return -1
+
+            return (
+              new Date(pageB.frontmatter.date).getTime() -
+              new Date(pageA.frontmatter.date).getTime()
+            )
+          },
+        },
+        {
+          key: 'timeline',
+          // Only article with date should be added to timeline
+          filter: (page) => page.frontmatter.date instanceof Date,
+          // Sort pages with time
+          sorter: (pageA, pageB) =>
+            new Date(pageB.frontmatter.date).getTime() -
+            new Date(pageA.frontmatter.date).getTime(),
+          layout: 'Timeline',
+          frontmatter: () => ({
+            title: 'Timeline',
+            sidebar: false,
+          }),
+        },
+      ],
+      hotReload: true,
+    }),
+    googleAnalyticsPlugin({
+      id: 'G-12ZYEGGPYC',
+    }),
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索文档',
+        },
+        '/zh/': {
+          placeholder: '搜索文档',
+        },
+      },
+    }),
+  ],
+
+  bundler: viteBundler(),
+})
