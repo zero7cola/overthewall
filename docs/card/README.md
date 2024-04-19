@@ -326,7 +326,7 @@ Hahasim从综合上来说比Clubsim好很多，只是这卡刚出一年多，知
 ![](../.vuepress/public/haha/4e43e0fa-4967-43c3-b037-c63248efaf0b.png)
 
 
-## 六、附录四：接收不到短信?网路运营商选择
+## 七、附录四：接收不到短信?网路运营商选择
 收到卡后，将卡放在第一卡槽
 并在网络设置中网络运营商，关闭<b><font color=#CC0033 size=4>自动选择​</font></b>，手动选择<b><font color=#CC0033 size=4>中国联通​</font></b>
 
