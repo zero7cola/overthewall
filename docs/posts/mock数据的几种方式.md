@@ -9,7 +9,7 @@ tag:
 #archive: true
 ---
 
-# Vue项目使用mock数据的几种方式
+# Vue-项目使用mock数据的几种方式
 本文是基于vue/cli 3.0创建的项目进行讲解
 
 首先我们来说一说vue/cli 3.0 与 2.0 的一些不同：
