@@ -5,8 +5,8 @@ category:
   - 前端
   - Vue文章
 tag:
-  - WWI
-archive: true
+  - vue
+#archive: true
 ---
 
 # Vue项目使用mock数据的几种方式
