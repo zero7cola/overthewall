@@ -13,7 +13,11 @@ export default defineUserConfig({
   head:[
     [
       'link', {rel:'icon', href : '/logo-title.jpg'}
+    ],
+    [
+      'script', {type: 'text/javascript', src: '/js/google-ads.js'}
     ]
+
   ],
 
   theme: defaultTheme({
