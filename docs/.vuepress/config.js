@@ -25,32 +25,32 @@ export default defineUserConfig({
     navbar: [
       //'/',
       { text: '香港卡', link: '/card/' },
-          { text: '微信解封', link: '/wechat/' },
-          // // {  text: '文档', link: '/api/FIRSTOFALL.md' },
-          // //{ text: 'External', link: 'https://www.baidu.com' },
-          {
-            text: '快速搭建商城',
-            children: [
-              {
-                text: '首页(马上开放)',
-                link: '',
-                // 该元素将一直处于激活状态
-               // activeMatch: '/',
-              },
-              {
-                text: '前台h5演示',
-                link: 'http://fastshop.top/',
-                // 该元素将一直处于激活状态
-               // activeMatch: '/',
-              },
-              {
-                text: '商户后台演示(马上开放)',
-                link: '',
-                // 该元素将一直处于激活状态
-               // activeMatch: '/',
-              },
-            ],
-          },
+      { text: '微信解封', link: '/wechat/' },
+      // // {  text: '文档', link: '/api/FIRSTOFALL.md' },
+      // //{ text: 'External', link: 'https://www.baidu.com' },
+      // {
+      //   text: '快速搭建商城',
+      //   children: [
+      //     {
+      //       text: '首页(马上开放)',
+      //       link: '',
+      //       // 该元素将一直处于激活状态
+      //       // activeMatch: '/',
+      //     },
+      //     {
+      //       text: '前台h5演示',
+      //       link: 'http://fastshop.top/',
+      //       // 该元素将一直处于激活状态
+      //       // activeMatch: '/',
+      //     },
+      //     {
+      //       text: '商户后台演示(马上开放)',
+      //       link: '',
+      //       // 该元素将一直处于激活状态
+      //       // activeMatch: '/',
+      //     },
+      //   ],
+      // },
       {
         text: '文章',
         link: '/article/',
