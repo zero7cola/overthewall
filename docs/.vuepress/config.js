@@ -21,7 +21,7 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     logo: '/logo-title.jpg',
-
+    contributors:false,
     navbar: [
       //'/',
       { text: '香港卡', link: '/card/' },
