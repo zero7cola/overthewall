@@ -2,10 +2,10 @@
 #title: Vue项目使用mock数据的几种方式
 date: 2024-04-01
 category:
-  - 前端
-  - Vue文章
+  - 技术
 tag:
   - vue
+  - 前端
 #archive: true
 ---
 
