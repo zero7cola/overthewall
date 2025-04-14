@@ -9,7 +9,7 @@
 <br>
 TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>
 QQ：88651795<br>
-Email:anybenull@gmail.com
+Email:outsstill@gmail.com
 :::
 
 ::: danger 注意
@@ -53,7 +53,7 @@ Email:anybenull@gmail.com
 
 其他联系方式：​
 
-TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>QQ:88651795<br>Email:anybenull@gmail.com
+TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>QQ:88651795<br>Email:outsstill@gmail.com
 
 ### 2、到手怎么玩？
 <b><font color=#00CC00>注意点一</font></b>：如果您是小米手机，插卡是会默认发送激活短信的，这样会扣除3.5 HKD的短信漫游费用，下面是解决方法：（注意：未发现其他品牌手机有此奇葩机制）
