@@ -11,7 +11,7 @@ yarn docs:build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'doc.overthewall.xyz' > CNAME
+echo 'overthewall.xyz' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:zero7cola/overthewall.git
@@ -19,7 +19,7 @@ else
   msg='来自github actions的自动部署'
   githubUrl=https://zero7cola:${GITHUB_TOKEN}@github.com/zero7cola/overthewall.git
   git config --global user.name "overthewall"
-  git config --global user.email "anybenull@gmail.com"
+  git config --global user.email "outsstill@gmail.com"
 fi
 git init
 git add -A
