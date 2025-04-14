@@ -1,4 +1,4 @@
-# 【2024年】香港手机卡完全攻略
+# 【2025年】香港手机卡完全攻略
 
 ::: danger 注意!!!
 最近有无赖直接拿本文章打广告的（当前TG马甲为：尘归尘 土归土、特立独行侠等等）⚠​
@@ -80,7 +80,7 @@ hahasim卡片可以在大陆激活，也可以在香港激活​
 重要提示：根據法例，於2022年3月1日或之後購買的儲值卡，使用香港服務前須實名登記，在成功登記前你的本地服務會被暫停。​
 儲值卡號碼: *********​
 儲值額: $50.0​
-儲值卡有效期至 15/09/2024 09:00 (香港時間)。​
+儲值卡有效期至 15/09/2025 09:00 (香港時間)。​
 辦理實名登記:​
 https://bit.ly/HahaRNR​
 ​請即下載 haha TRAVEL 手機應用程式，於App內輸入電話號碼及掃描此卡QR code​
@@ -92,7 +92,7 @@ https://mmedia.fortress.com.hk/fortress-sim/hahaTravel.apk​
 ​Important notice: Under the law of Hong Kong, registration before use is required for prepaid SIM cards purchased on or after 1-Mar 2022. Your Hong Kong services (if any) are suspended before successful real-name registration.​
 Your mobile no. is: *******​
 Stored value: HK$50.0​
-SIM Expiry date: 31/12/2024 09:00 (HK Time).​
+SIM Expiry date: 31/12/2025 09:00 (HK Time).​
 ​Complete real-name registration:​
 https://bit.ly/HahaRNR-en​
 Please download the haha TRAVEL app, enter the mobile number in the app and scan the card QR code​
@@ -135,7 +135,7 @@ E. 其他（可证明你身份的资料，相比其他证件需要审核更久�
 
 <b><font color=#9933CC>常见误区3</font></b>：我是不是拿到卡就要激活？​
 
-答：最迟2024年12月31日前激活即可~​
+答：最迟2025年12月31日前激活即可~​
 
 <b><font color=#9933CC>常见误区4</font></b>：我保号去haha Travel app购买套餐就可以是吗？购买套餐要实名吗？
 

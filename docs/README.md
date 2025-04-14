@@ -27,7 +27,7 @@ features:
   # - title: Bundlers
   #   details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
 
-footer: MIT Licensed | Copyright © 2018-2024 Anybenull
+footer: MIT Licensed | Copyright © 2018-2025 Anybenull
 ---
 
 <!-- This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
