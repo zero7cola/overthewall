@@ -24,11 +24,30 @@ MySQL|Elasticsearch|
 字段（Column）|字段（Fields）
 
 ### docker安装es
->这里以 es 7.7.0 为例 somenetwork 名称随意取
+>这里以 es 8.18.0 为例 es-net 名称随意取
 
 ```shell
-$ docker network create somenetwork
-$ docker run -d --name es --net somenetwork -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.7.0
+$ docker network create es-net
+```
+
+``` shell
+mkdir -p /data/es/data /data/es/plugins /data/es/config
+chmod -R 777 /data/
+```
+
+``` shell
+$ docker run -d \
+--restart=always \
+--name es \
+--network es-net \
+-p 9200:9200 \
+-p 9300:9300 \
+--privileged \
+-v /home/zero7/data/es/data:/usr/share/elasticsearch/data \
+-v /home/zero7/data/es/plugins:/usr/share/elasticsearch/plugins \
+-e "discovery.type=single-node" \
+-e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
+elasticsearch:8.18.0
 ```
 
 测试是否安装成功
