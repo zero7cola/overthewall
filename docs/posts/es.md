@@ -54,23 +54,22 @@ elasticsearch:8.18.0
 
 ```shell
 $ curl localhost:9200
-
 {
-    "name": "abb9d13686bd",
-    "cluster_name": "docker-cluster",
-    "cluster_uuid": "0Wnxm7uJTyGUrHlDE40fWA",
-    "version": {
-        "number": "7.7.0",
-        "build_flavor": "default",
-        "build_type": "docker",
-        "build_hash": "81a1e9eda8e6183f5237786246f6dced26a10eaf",
-        "build_date": "2020-05-12T02:01:37.602180Z",
-        "build_snapshot": false,
-        "lucene_version": "8.5.1",
-        "minimum_wire_compatibility_version": "6.8.0",
-        "minimum_index_compatibility_version": "6.0.0-beta1"
-    },
-    "tagline": "You Know, for Search"
+  "name" : "3a6ad1b9945a",
+  "cluster_name" : "docker-cluster",
+  "cluster_uuid" : "Txe7Fbg2R6amEaxs5Pvf-g",
+  "version" : {
+    "number" : "8.18.0",
+    "build_flavor" : "default",
+    "build_type" : "docker",
+    "build_hash" : "04e979aa50b657bebd4a0937389308de82c2bdad",
+    "build_date" : "2025-04-10T10:09:16.444104780Z",
+    "build_snapshot" : false,
+    "lucene_version" : "9.12.1",
+    "minimum_wire_compatibility_version" : "7.17.0",
+    "minimum_index_compatibility_version" : "7.0.0"
+  },
+  "tagline" : "You Know, for Search"
 }
 ```
 
@@ -85,7 +84,7 @@ ik 的版本必须与es版本一致
 //进入容器
 $ docker exec -it es /bin/bash
 //安装插件
-$ elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.7.0/elasticsearch-analysis-ik-7.7.0.zip
+$ bin/elasticsearch-plugin install https://get.infini.cloud/elasticsearch/analysis-ik/8.18.0
 //退出容器并重启
 $ Ctrl+Q+P
 $ docker restart es
