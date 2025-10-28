@@ -9,7 +9,7 @@
 ::: tip
 联系方式:
 
-TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>
+TG：[https://telegram.me/overthestep](https://telegram.me/overthestep)​<br>
 QQ：88651795​<br>
 Email:outsstill@gmail.com
 :::

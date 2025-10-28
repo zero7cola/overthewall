@@ -7,7 +7,7 @@
 
 如果需要买香港手机卡或香港代购任何其他物品，可联系
 <br>
-TG：[https://t.me/netdegree](https://t.me/netdegree)​<br>
+TG：[https://telegram.me/overthestep](https://telegram.me/overthestep)​<br>
 QQ：88651795<br>
 Email:outsstill@gmail.com
 :::
