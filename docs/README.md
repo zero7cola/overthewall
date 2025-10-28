@@ -1,7 +1,7 @@
 ---
 home: true
 #title: 香港卡、微信解封、VX解封、科学上网、境外卡、快速商城、商城搭建
-heroImage: /logo.jpg
+heroImage: /step.png
 heroText: over the step
 tagline: 跨过阶梯去感受无边界的世界吧
 actions:
