@@ -11,7 +11,7 @@ yarn docs:build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'www.overthewall.xyz' > CNAME
+echo 'doc.overthestep.com' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:zero7cola/overthewall.git
