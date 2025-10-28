@@ -2,7 +2,7 @@
 home: true
 #title: 香港卡、微信解封、VX解封、科学上网、境外卡、快速商城、商城搭建
 heroImage: /logo.jpg
-heroText: overthewall
+heroText: 帮你跨域阶梯
 tagline: 去感受无边界的世界吧
 actions:
   - text: 香港卡流程 ->
@@ -27,7 +27,7 @@ features:
   # - title: Bundlers
   #   details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
 
-footer: MIT Licensed | Copyright © 2018-2025 Anybenull
+footer: MIT Licensed | Copyright © 2018-2025 Overthestep
 ---
 
 <!-- This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
