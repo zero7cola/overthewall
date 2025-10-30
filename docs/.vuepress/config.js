@@ -10,21 +10,15 @@ export default defineUserConfig({
 
   title: '',
   description: 'My first VuePress Site',
-  head:[
+  head: [
     [
-      'link', {rel:'icon', href : '/logo-title.jpg'}
-    ],
-    // [
-    //   'script', {src: '/js/google-ads.js'}
-    // ],
-    // [
-    //   "script",
-    //   {},
-    //   `\
-    //     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3807830837786691"
-    //  crossorigin="anonymous"></script>
-    //   `,
-    // ],
+      "script",
+      {
+        "data-ad-client": "ca-pub-3807830837786691",
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      }
+    ]
   ],
 
   theme: defaultTheme({
