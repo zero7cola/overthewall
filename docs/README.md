@@ -28,6 +28,11 @@ features:
   #   details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
 
 footer: MIT Licensed | Copyright © 2018-2025 Overthestep
+
+head:
+  - script:
+      type: module
+      src: /js/google-ads.js
 ---
 
 <!-- This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
