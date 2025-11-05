@@ -17,7 +17,7 @@ tag:
 
 > `native支付` 就是扫码支付
 
-![](../.vuepress/public/pay/vx_payment.png)
+<!-- ![](../.vuepress/public/pay/vx_payment.png) -->
 
 
 ## 代码
